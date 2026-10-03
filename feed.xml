@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>JichangTalk 机场讲堂</title>
+    <link>https://jichangtalk.homes/</link>
+    <description>2026最新高性价比机场推荐精选排行榜，深度横评全球云、飞猫云、暮光加速、微风网络等27家主流高速专线机场，全面整理各家价格套餐、节点地区、Clash配置、流媒体与ChatGPT/Claude AI解锁指南。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 23 Sep 2026 10:00:00 GMT</lastBuildDate>
+    <item>
+      <title>规则模式与全局模式怎么选？按日常使用场景来理解</title>
+      <link>https://jichangtalk.homes/tutorials/rules-vs-global-mode-guide/</link>
+      <description>深入剖析客户端中的规则分流（Rule）与全局代理（Global）底层运作逻辑，教你如何根据工作、娱乐与查资料场景精准选择，彻底告别国内网站访问缓慢与流量无端消耗问题。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/tutorials/rules-vs-global-mode-guide/</guid>
+    </item>
+    <item>
+      <title>新手第一篇：机场使用核心逻辑与教程阅读顺序</title>
+      <link>https://jichangtalk.homes/tutorials/beginner-airport-workflow-guide/</link>
+      <description>面向初学者的机场概念全景拆解：什么是订阅、节点、客户端与分流规则？系统梳理学习路径与阅读顺序，帮助新手建立清晰认知模型，避免盲目折腾与配置踩坑。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/tutorials/beginner-airport-workflow-guide/</guid>
+    </item>
+    <item>
+      <title>机场客户端代理模式全面拆解：Direct、Rule 与 Global</title>
+      <link>https://jichangtalk.homes/tutorials/client-proxy-modes-explained/</link>
+      <description>系统对比 Direct（直连）、Rule（规则）与 Global（全局）三大代理模式的原理、优缺点与适用场景，通过清晰的场景对照表帮助读者彻底掌握分流策略。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/tutorials/client-proxy-modes-explained/</guid>
+    </item>
+    <item>
+      <title>系统代理与 TUN 模式的区别：什么时候必须开虚拟网卡</title>
+      <link>https://jichangtalk.homes/tutorials/system-proxy-vs-tun-mode/</link>
+      <description>详细对比操作系统代理与 TUN 虚拟网卡模式的底层技术差异，明确什么场景必须开启 TUN 模式，避免软件不走代理与网络流量穿透问题。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/tutorials/system-proxy-vs-tun-mode/</guid>
+    </item>
+    <item>
+      <title>机场订阅和节点有什么区别？新手理解客户端前先看这篇</title>
+      <link>https://jichangtalk.homes/subscription-nodes/subscription-vs-nodes-difference/</link>
+      <description>澄清初学者最容易混淆的概念：机场订阅与单一节点到底有什么区别？为什么不能只保存单个节点链接？详解订阅机制如何保障网络长期可用。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/subscription-nodes/subscription-vs-nodes-difference/</guid>
+    </item>
+    <item>
+      <title>什么时候需要切换机场节点？按地区与业务意图做选择</title>
+      <link>https://jichangtalk.homes/subscription-nodes/when-to-switch-nodes-logic/</link>
+      <description>详解何时需要手动切换机场节点：按照地理延迟、流媒体解锁区域、晚高峰拥堵情况及大模型 AI 工具的风控要求，建立科学的节点切换习惯。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/subscription-nodes/when-to-switch-nodes-logic/</guid>
+    </item>
+    <item>
+      <title>机场测速后的 Ping 与下载速度怎么看：避免唯延迟论</title>
+      <link>https://jichangtalk.homes/subscription-nodes/understanding-ping-latency-vs-speed/</link>
+      <description>深入探讨网络测速中的核心指标：为什么 Ping 延迟低不等于看视频快？揭示真实带宽、丢包率与物理距离之间的关系，走出网络性能评估误区。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/subscription-nodes/understanding-ping-latency-vs-speed/</guid>
+    </item>
+    <item>
+      <title>节点名称里的倍率是什么意思？如何避免流量无故扣损</title>
+      <link>https://jichangtalk.homes/subscription-nodes/node-multipliers-explained/</link>
+      <description>全面拆解机场节点名称中常见的 0.1x、1.0x、3.0x 等倍率标识：背后的成本构成是什么？如何根据业务重要性合理匹配倍率，防止流量快速耗尽。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/subscription-nodes/node-multipliers-explained/</guid>
+    </item>
+    <item>
+      <title>Clash 使用入门与基础界面认知：从导入配置到分流切换</title>
+      <link>https://jichangtalk.homes/clients/clash-verge-rev-beginner-guide/</link>
+      <description>针对主流开源客户端 Clash Verge Rev 的详尽入门指南：从安装、导入订阅链接、选择代理模式到内核切换，手把手带你掌握高效操作。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/clients/clash-verge-rev-beginner-guide/</guid>
+    </item>
+    <item>
+      <title>Shadowrocket 小火箭使用入门：iOS 平台极简配置教学</title>
+      <link>https://jichangtalk.homes/clients/shadowrocket-ios-setup-walkthrough/</link>
+      <description>面向 iPhone 与 iPad 用户的 Shadowrocket（小火箭）实战教学：涵盖扫码添加、订阅更新、按需连接（On Demand）以及场景规则配置。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/clients/shadowrocket-ios-setup-walkthrough/</guid>
+    </item>
+    <item>
+      <title>sing-box 新一代通用客户端上手：现代内核的核心优势</title>
+      <link>https://jichangtalk.homes/clients/sing-box-universal-client-overview/</link>
+      <description>探索新一代通用代理核心 sing-box：解析其轻量高效的技术特性、跨平台一致性优势，以及如何导入与管理现代通用订阅格式。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/clients/sing-box-universal-client-overview/</guid>
+    </item>
+    <item>
+      <title>主流客户端选型对比：Clash、Shadowrocket、Stash 适合谁</title>
+      <link>https://jichangtalk.homes/clients/client-selection-comparison-guide/</link>
+      <description>深度横评 Clash Verge Rev、Shadowrocket、Stash、sing-box 与 Loon：从易用性、分流能力、跨平台表现与系统开销四个维度给出客观选型建议。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/clients/client-selection-comparison-guide/</guid>
+    </item>
+    <item>
+      <title>Windows 机场客户端使用教程：系统代理与自启动设置</title>
+      <link>https://jichangtalk.homes/devices/windows-airport-client-setup-guide/</link>
+      <description>Windows 10 与 11 环境下的客户端安装与深度配置指南：系统代理异常修复、服务模式启用、开机静默启动及 UWP 应用网络回环限制解除。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/devices/windows-airport-client-setup-guide/</guid>
+    </item>
+    <item>
+      <title>Mac 苹果电脑机场配置指南：权限授予与常见网络异常</title>
+      <link>https://jichangtalk.homes/devices/macos-airport-configuration-guide/</link>
+      <description>针对 macOS 用户的配置教学：详细讲解系统网络扩展权限授权、Helper 安装、TUN 模式配置，以及解决 Mac 休眠唤醒后网络断连的实用技巧。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/devices/macos-airport-configuration-guide/</guid>
+    </item>
+    <item>
+      <title>iPhone 与 iPad 机场使用教程：跨设备同步与后台保活</title>
+      <link>https://jichangtalk.homes/devices/iphone-ipad-ios-workflow-guide/</link>
+      <description>iPhone 与 iPad 上的网络代理进阶指南：如何应对 iOS 严格的后台墓碑机制？详解低电量模式下的保活策略、按需连接配置及双端设置同步。</description>
+      <pubDate>Fri, 19 Sep 2026 08:00:00 GMT</pubDate>
+      <guid>https://jichangtalk.homes/devices/iphone-ipad-ios-workflow-guide/</guid>
+    </item>
+  </channel>
+</rss>
