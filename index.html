@@ -45,8 +45,8 @@ body {
   font-family: var(--font-sans);
   color: var(--text-main);
   background-color: #f1f5f9;
-  line-height: 1.7;
-  font-size: 16px;
+  line-height: 1.65;
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -60,11 +60,11 @@ a:hover { text-decoration: underline; }
 
 /* Sidebar (Anatole Style) */
 .site-sidebar {
-  width: 320px;
+  width: 250px;
   background-color: var(--sidebar-bg);
   color: var(--sidebar-text);
   flex-shrink: 0;
-  padding: 36px 26px;
+  padding: 24px 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,77 +76,78 @@ a:hover { text-decoration: underline; }
 }
 
 .sidebar-header .brand-logo {
-  font-size: 1.35rem;
+  font-size: 1.08rem;
   font-weight: 800;
   color: #ffffff;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 8px;
+  margin-bottom: 6px;
+  white-space: nowrap;
 }
 .sidebar-header .brand-logo:hover {
   text-decoration: none;
   color: #38bdf8;
 }
 .brand-logo-img {
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   display: inline-block;
   flex-shrink: 0;
 }
 .sidebar-header .brand-slogan {
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   color: var(--sidebar-muted);
-  line-height: 1.5;
-  margin-bottom: 20px;
+  line-height: 1.45;
+  margin-bottom: 14px;
 }
 
 .sidebar-tg-box {
   background: #0f172a;
   border: 1px solid #334155;
-  border-radius: 8px;
-  padding: 12px 14px;
-  margin-bottom: 18px;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
 }
 .btn-sidebar-tg {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   background: var(--tg-color);
   color: #ffffff !important;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 6px 10px;
+  border-radius: 5px;
   text-decoration: none !important;
   transition: opacity 0.2s ease;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .btn-sidebar-tg:hover { opacity: 0.9; }
 
 .sidebar-nav {
-  margin: 16px 0;
+  margin: 12px 0;
 }
 .nav-group-title {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: #64748b;
-  margin: 14px 0 8px 0;
+  margin: 10px 0 6px 0;
   font-weight: 700;
 }
 .sidebar-nav ul { list-style: none; }
-.sidebar-nav li { margin-bottom: 6px; }
+.sidebar-nav li { margin-bottom: 4px; }
 .sidebar-nav a {
   display: block;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 6px 10px;
+  border-radius: 5px;
   color: #cbd5e1;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   transition: all 0.2s ease;
 }
 .sidebar-nav a:hover, .sidebar-nav a.active {
@@ -157,21 +158,21 @@ a:hover { text-decoration: underline; }
 
 .sidebar-device-links {
   background: #0f172a;
-  padding: 12px;
+  padding: 10px;
   border-radius: 6px;
-  margin: 14px 0;
+  margin: 10px 0;
 }
 .device-badge-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 8px;
+  gap: 5px;
+  margin-top: 6px;
 }
 .device-badge {
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   background: #1e293b;
   color: #38bdf8;
-  padding: 3px 8px;
+  padding: 2px 7px;
   border-radius: 4px;
   border: 1px solid #334155;
 }
@@ -179,9 +180,9 @@ a:hover { text-decoration: underline; }
 
 /* Sidebar Table of Contents (TOC Scrollspy) */
 .sidebar-toc-container {
-  margin: 18px 0;
+  margin: 12px 0;
   border-top: 1px solid #334155;
-  padding-top: 14px;
+  padding-top: 10px;
   max-height: 48vh;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -195,11 +196,11 @@ a:hover { text-decoration: underline; }
   border-radius: 4px;
 }
 .toc-title {
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #38bdf8;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -215,19 +216,19 @@ a:hover { text-decoration: underline; }
   line-height: 1.35;
 }
 .toc-item.toc-h2 {
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 600;
 }
 .toc-item.toc-h3 {
-  font-size: 0.78rem;
-  padding-left: 12px;
+  font-size: 0.76rem;
+  padding-left: 10px;
   font-weight: 400;
   border-left: 1px solid #334155;
   margin-left: 4px;
 }
 .toc-link {
   display: block;
-  padding: 4px 8px;
+  padding: 3px 6px;
   color: #94a3b8;
   border-radius: 4px;
   text-decoration: none !important;
@@ -244,22 +245,22 @@ a:hover { text-decoration: underline; }
   color: #38bdf8 !important;
   background: rgba(56, 189, 248, 0.12);
   border-left: 3px solid #38bdf8;
-  padding-left: 8px;
+  padding-left: 6px;
   font-weight: 700;
 }
 
 .sidebar-footer {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #64748b;
   border-top: 1px solid #334155;
-  padding-top: 18px;
+  padding-top: 12px;
 }
 
 /* Main Content Area */
 .site-main {
   flex-grow: 1;
-  padding: 40px 48px;
-  max-width: 1040px;
+  padding: 24px 32px;
+  max-width: 1080px;
   background-color: var(--content-bg);
   min-height: 100vh;
 }
@@ -392,23 +393,23 @@ a:hover { text-decoration: underline; }
 .breadcrumbs a:hover { color: var(--primary-blue); }
 
 /* Typography */
-h1 { font-size: 2.1rem; line-height: 1.35; color: #0f172a; margin-bottom: 16px; font-weight: 800; letter-spacing: -0.5px; }
-h2 { font-size: 1.45rem; line-height: 1.4; color: #1e293b; margin: 32px 0 16px 0; font-weight: 700; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
-h3 { font-size: 1.2rem; line-height: 1.45; color: #334155; margin: 24px 0 12px 0; font-weight: 600; }
-p { margin-bottom: 18px; color: #334155; font-size: 1.02rem; text-align: justify; }
-ul, ol { margin-bottom: 20px; padding-left: 24px; color: #334155; }
-li { margin-bottom: 8px; }
+h1 { font-size: 1.75rem; line-height: 1.35; color: #0f172a; margin-bottom: 14px; font-weight: 800; letter-spacing: -0.4px; }
+h2 { font-size: 1.28rem; line-height: 1.4; color: #1e293b; margin: 26px 0 14px 0; font-weight: 700; border-bottom: 1px solid var(--border-color); padding-bottom: 6px; }
+h3 { font-size: 1.1rem; line-height: 1.45; color: #334155; margin: 20px 0 10px 0; font-weight: 600; }
+p { margin-bottom: 14px; color: #334155; font-size: 0.94rem; text-align: justify; }
+ul, ol { margin-bottom: 16px; padding-left: 22px; color: #334155; }
+li { margin-bottom: 6px; }
 
 pre {
   background: #0f172a;
   color: #f8fafc;
-  padding: 16px;
+  padding: 14px;
   border-radius: 8px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
-  margin: 18px 0;
-  font-size: 0.9rem;
+  margin: 16px 0;
+  font-size: 0.88rem;
   line-height: 1.5;
 }
 code {
@@ -425,21 +426,21 @@ pre code {
 .article-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  font-size: 0.85rem;
+  gap: 14px;
+  font-size: 0.82rem;
   color: var(--text-muted);
-  margin-bottom: 20px;
-  padding-bottom: 16px;
+  margin-bottom: 18px;
+  padding-bottom: 14px;
   border-bottom: 1px solid var(--border-color);
 }
 .article-summary-box {
   background-color: #f8fafc;
   border-left: 4px solid var(--primary-blue);
-  padding: 16px 20px;
+  padding: 14px 18px;
   border-radius: 0 8px 8px 0;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   color: #475569;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   line-height: 1.6;
 }
 
@@ -447,19 +448,19 @@ pre code {
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin: 24px 0;
+  margin: 20px 0;
   width: 100%;
 }
 table.custom-table {
   width: 100%;
-  min-width: 1100px;
+  min-width: 900px;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   background: #ffffff;
   white-space: nowrap;
 }
 table.custom-table th, table.custom-table td {
-  padding: 12px 16px;
+  padding: 8px 12px;
   border: 1px solid var(--border-color);
   text-align: left;
   vertical-align: middle;
@@ -477,8 +478,8 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
   background: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 24px;
-  margin-bottom: 24px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 .provider-card-full.is-primary {
@@ -488,20 +489,20 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
   display: inline-block;
   background: #2563eb;
   color: #fff;
-  font-size: 0.75rem;
-  padding: 2px 8px;
+  font-size: 0.74rem;
+  padding: 2px 7px;
   border-radius: 4px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .btn-cta {
   display: inline-block;
   background-color: var(--primary-blue);
   color: #ffffff !important;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
   transition: all 0.2s ease;
   text-decoration: none !important;
   box-shadow: 0 2px 6px rgba(37,99,235,0.25);
@@ -513,34 +514,42 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
   display: inline-block;
   background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
   color: #ffffff !important;
-  font-size: 1.05rem;
-  font-weight: 800;
-  padding: 12px 28px;
-  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 6px;
   text-decoration: none !important;
-  box-shadow: 0 4px 14px rgba(225,29,72,0.35);
+  box-shadow: 0 3px 10px rgba(225,29,72,0.3);
   transition: all 0.2s ease;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 .btn-official-reg:hover {
   background: linear-gradient(135deg, #be123c 0%, #9f1239 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(225,29,72,0.45);
+  box-shadow: 0 5px 14px rgba(225,29,72,0.4);
 }
 
-/* Provider Detailed Specs & Grid */
+/* Provider Detailed Specs & Grid - Balanced 2x2 Grid */
 .provider-specs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 12px;
-  margin: 14px 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+}
+@media (max-width: 640px) {
+  .provider-specs-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .provider-spec-item {
   background: #f8fafc;
-  padding: 12px 14px;
+  padding: 9px 12px;
   border-radius: 6px;
   border: 1px solid #e2e8f0;
-  font-size: 0.9rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
   line-height: 1.6;
 }
 .provider-spec-item strong {
@@ -730,46 +739,46 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 </div>
 
 
-<div class="hero-keyword-box" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #bfdbfe; padding: 24px; border-radius: 12px; margin: 20px 0 32px 0; box-shadow: 0 4px 14px rgba(37,99,235,0.08);">
-  <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-    <span style="font-size:1.4rem;">🔥</span>
-    <h2 style="font-size:1.18rem; margin:0; padding:0; border:none; color:#1e3a8a;">2026机场推荐精选指南与全网核心节点测速速查</h2>
+<div class="hero-keyword-box" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #bfdbfe; padding: 18px 20px; border-radius: 10px; margin: 16px 0 24px 0; box-shadow: 0 4px 14px rgba(37,99,235,0.08);">
+  <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+    <span style="font-size:1.2rem;">🔥</span>
+    <h2 style="font-size:1.15rem; margin:0; padding:0; border:none; color:#1e3a8a;">2026机场推荐精选指南与全网核心节点测速速查</h2>
   </div>
-  <p style="font-size: 1.02rem; color: #1e3a8a; margin-bottom: 12px; line-height: 1.75;">
+  <p style="font-size: 0.94rem; color: #1e3a8a; margin-bottom: 10px; line-height: 1.68;">
     欢迎查阅 <strong>JichangTalk 机场讲堂 2026 机场选型与横评专刊</strong>。面对多样的科学上网与海外网络加速方案，我们立足于<strong>公开技术架构解析、三网（电信/联通/移动）日常访问特点梳理、节点覆盖与主流客户端配置验证</strong>，客观呈现各商家的套餐信息、适用人群与流媒体/AI 访问特性。网络环境受多重因素影响，建议读者优先选用月付方案进行实地体验。
   </p>
-  <div style="background:rgba(255,255,255,0.85); padding:14px 16px; border-radius:8px; border:1px solid #93c5fd; font-size:0.92rem; color:#1e40af; line-height:1.65;">
+  <div style="background:rgba(255,255,255,0.85); padding:10px 14px; border-radius:6px; border:1px solid #93c5fd; font-size:0.86rem; color:#1e40af; line-height:1.6;">
     <strong>📖 核心选型指南与覆盖方向：</strong>
     本站专为中文读者整理 2026 年主流机场服务选型参考，内容涵盖高性价比轻量方案、稳定专线（IEPL/BGP 隧道）、Clash 与 Shadowrocket 客户端分流配置，以及针对 ChatGPT / Claude 日常交互与 4K 流媒体播放的实际适用场景。读者可按需查阅各商家的套餐价格、节点分布与实机配置指引。
   </div>
-  <p style="font-size:0.84rem; color:#3b82f6; margin-top:10px; margin-bottom:0;">
+  <p style="font-size:0.8rem; color:#3b82f6; margin-top:8px; margin-bottom:0;">
     💡 声明：所有价格、套餐与活动优惠码以各服务商当前结算页实时标价为准。各服务商节点配置、出口 IP 与抗封锁策略受网络大环境动态影响，建议先按月付体验再做长期决定。
   </p>
 </div>
 
 
-<div class="featured-main-article-card" style="background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%); border: 2px solid #10b981; border-radius: 12px; padding: 24px; margin: 20px 0 32px 0; box-shadow: 0 4px 18px rgba(16,185,129,0.12); position: relative;">
-  <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:14px; margin-bottom:12px;">
+<div class="featured-main-article-card" style="background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%); border: 2px solid #10b981; border-radius: 10px; padding: 18px 20px; margin: 16px 0 24px 0; box-shadow: 0 4px 16px rgba(16,185,129,0.1); position: relative;">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:10px;">
     <div>
-      <span style="display:inline-block; background:linear-gradient(135deg, #059669, #047857); color:#fff; font-size:0.82rem; font-weight:800; padding:4px 14px; border-radius:20px; margin-bottom:8px;">
+      <span style="display:inline-block; background:linear-gradient(135deg, #059669, #047857); color:#fff; font-size:0.76rem; font-weight:800; padding:3px 10px; border-radius:20px; margin-bottom:6px;">
         🔥 机场推荐核心主要文章 · 27家商业机场完整资料全景横评
       </span>
-      <h2 style="margin:4px 0 6px 0; font-size:1.45rem; color:#0f172a; border:none; padding:0;">
+      <h2 style="margin:2px 0 4px 0; font-size:1.24rem; color:#0f172a; border:none; padding:0;">
         <a href="/service/stable-airport-recommendations-speedtest-guide/" style="color:#0f172a; text-decoration:none;">
           稳定机场推荐与专线节点选择：BGP/IEPL抗波动实测
         </a>
       </h2>
     </div>
     <div>
-      <a href="/service/stable-airport-recommendations-speedtest-guide/" class="btn-official-reg" style="font-size:0.95rem; padding:10px 24px; background:linear-gradient(135deg, #059669 0%, #047857 100%); box-shadow:0 4px 14px rgba(5,150,105,0.35);">
+      <a href="/service/stable-airport-recommendations-speedtest-guide/" class="btn-official-reg" style="background:linear-gradient(135deg, #059669 0%, #047857 100%); box-shadow:0 3px 10px rgba(5,150,105,0.3);">
         👉 查看主要文章与27家机场评测 &rarr;
       </a>
     </div>
   </div>
-  <p style="font-size:1.02rem; color:#334155; line-height:1.75; margin-bottom:14px;">
+  <p style="font-size:0.92rem; color:#334155; line-height:1.68; margin-bottom:10px;">
     全面解析稳定机场推荐的底层技术架构，实测对比全球云、飞猫云、暮光加速与微风网络的 BGP 隧道与 IEPL 专线抗波动表现，助您告别频繁掉线与丢包。完整收录全网 27 家服务商价格、节点、适用场景、适用人群与 AI 解锁测评。
   </p>
-  <div style="display:flex; flex-wrap:wrap; gap:16px; font-size:0.88rem; color:#475569; border-top:1px solid #d1fae5; padding-top:12px;">
+  <div style="display:flex; flex-wrap:wrap; gap:14px; font-size:0.82rem; color:#475569; border-top:1px solid #d1fae5; padding-top:10px;">
     <span><strong>主题方向：</strong>稳定机场选型指南</span>
     <span><strong>测评服务商：</strong>全网 27 家主流商业机场</span>
     <span><strong>核心特性：</strong>BGP/IEPL抗波动实测 · 晚高峰4K流媒体 · ChatGPT & Claude 原生解锁</span>
@@ -779,239 +788,239 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 
 
 <h2>🏆 2026 年度四强主力机场深度测评与专属注册通道</h2>
-<p style="font-size:1.02rem; color:#475569; margin-bottom:20px;">
+<p style="font-size:0.94rem; color:#475569; margin-bottom:16px;">
   结合公开架构参数、用户反馈与日常体验，我们从全网收录的 27 家服务商中梳理出定位清晰、运营时间较长的主力服务商。各家在专线中继、免配置客户端、大带宽支持与通用订阅方面各有侧重，读者可根据自身预算、设备类型与实际业务需求按需选型（由于网络环境动态变化，实际性能请以个人本地网络测试为准）：
 </p>
-<div style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 36px;">
+<div style="display: flex; flex-direction: column; gap: 18px; margin-bottom: 28px;">
 
-  <div class="top4-spotlight-card rank-1" style="background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%); border: 2px solid #f59e0b; border-radius: 12px; padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #e2e8f0; padding-bottom:14px;">
+  <div class="top4-spotlight-card rank-1" style="background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%); border: 2px solid #f59e0b; border-radius: 10px; padding: 16px 18px; box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:12px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
       <div>
-        <div style="display:inline-block; background:#f59e0b; color:#fff; font-size:0.8rem; font-weight:800; padding:4px 10px; border-radius:20px; margin-bottom:6px;">
+        <div style="display:inline-block; background:#f59e0b; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:16px; margin-bottom:4px;">
           👑 综合全能第一 · 旗舰 IEPL 专线
         </div>
-        <h3 style="margin:4px 0 6px 0; font-size:1.45rem; color:#0f172a;">【第 1 名】全球云</h3>
-        <div style="font-size:0.9rem; color:#64748b;">
+        <h3 style="margin:2px 0 4px 0; font-size:1.22rem; color:#0f172a;">【第 1 名】全球云</h3>
+        <div style="font-size:0.84rem; color:#64748b;">
           架构体系：<strong>全专线 IEPL 高速内网隧道</strong> · 节点地区：<strong>香港、日本、新加坡、美国、台湾及欧洲多国</strong>
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.25rem; font-weight:bold; color:#dc2626; margin-bottom:8px;">20 元/月</div>
-        <a href="https://hueue09.gcvipaff.com/#/?code=z8U9aaa4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.95rem; padding:10px 22px;">
+        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月</div>
+        <a href="https://hueue09.gcvipaff.com/#/?code=z8U9aaa4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg">
           👉 官网注册与配置通道 &rarr;
         </a>
       </div>
     </div>
 
-    <div style="margin-bottom:16px;">
-      <p style="font-size:0.98rem; color:#334155; line-height:1.7; margin-bottom:12px;">全站第一主推服务。多国家和地区节点、智能分流与灵活套餐，支持月付及大流量梯度，适合希望一站式解决多设备稳定连接的用户。</p>
-      <div style="margin-bottom:12px;"><span style="font-size:0.9rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">qq88</code> <span style="font-size:0.82rem; color:#64748b;">(8 折优惠码，适用套餐、有效期及叠加规则以结算页为准)</span></div>
+    <div style="margin-bottom:12px;">
+      <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第一主推服务。多国家和地区节点、智能分流与灵活套餐，支持月付及大流量梯度，适合希望一站式解决多设备稳定连接的用户。</p>
+      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">qq88</code> <span style="font-size:0.8rem; color:#64748b;">(8 折优惠码，适用套餐、有效期及叠加规则以结算页为准)</span></div>
     </div>
 
     <div class="provider-specs-grid">
       <div class="provider-spec-item">
         <strong>💰 套餐规格与流量：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>轻量版：20 元/月，120GB/月</li><li>进阶版：40 元/月，300GB/月</li><li>重度版：100 元/月，700GB/月</li><li>大户版：180 元/月，1500GB/月</li>
         </ul>
       </div>
       <div class="provider-spec-item">
         <strong>🌐 传输协议与客户端：</strong>
-        <p style="margin:4px 0 6px 0; font-size:0.88rem; color:#334155;">协议：Shadowsocks, Trojan</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;">支持：Clash, Shadowrocket, sing-box, Stash, 通用订阅</p>
+        <p style="margin:2px 0 4px 0; font-size:0.82rem; color:#334155;">协议：Shadowsocks, Trojan</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;">支持：Clash, Shadowrocket, sing-box, Stash, 通用订阅</p>
       </div>
       <div class="provider-spec-item">
         <strong>🎯 核心适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">4K 高清流媒体播放、多国跨境店铺日常管理、跨国视频会议 (Zoom/Teams/Google Meet) 与大文件传输</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">4K 高清流媒体播放、多国跨境店铺日常管理、跨国视频会议 (Zoom/Teams/Google Meet) 与大文件传输</p>
       </div>
       <div class="provider-spec-item">
         <strong>👥 精准匹配适用人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">跨境电商出海团队、外贸外企白领、重度 4K 影音爱好者、AI 深度从业者与科研学者、追求一站式多设备稳定连接的高要求用户</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">跨境电商出海团队、外贸外企白领、重度 4K 影音爱好者、AI 深度从业者与科研学者、追求一站式多设备稳定连接的高要求用户</p>
       </div>
     </div>
 
-    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px; margin-top:14px;">
-      <div style="margin-bottom:8px;">
+    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; margin-top:10px;">
+      <div style="margin-bottom:4px;">
         <span class="badge-ai-pill">🤖 AI 解锁测评</span>
-        <span style="font-size:0.88rem; color:#065f46; line-height:1.6;">提供主流亚太与美区出口节点，支持 ChatGPT 网页版及常用大模型交互。实际可用性受目标平台风控规则与 IP 信誉动态影响，服务商定期维护出口池，建议保持固定节点以降低验证频率。</span>
+        <span style="font-size:0.82rem; color:#065f46; line-height:1.5;">提供主流亚太与美区出口节点，支持 ChatGPT 网页版及常用大模型交互。实际可用性受目标平台风控规则与 IP 信誉动态影响，服务商定期维护出口池，建议保持固定节点以降低验证频率。</span>
       </div>
       <div>
         <span class="badge-stream-pill">🎬 流媒体兼容性</span>
-        <span style="font-size:0.88rem; color:#1e40af; line-height:1.6;">支持 Netflix 常见区域、Disney+ 与 YouTube 4K 等主流流媒体播放，流媒体可用性受各平台 IP 策略动态影响，建议以实测为准。</span>
+        <span style="font-size:0.82rem; color:#1e40af; line-height:1.5;">支持 Netflix 常见区域、Disney+ 与 YouTube 4K 等主流流媒体播放，流媒体可用性受各平台 IP 策略动态影响，建议以实测为准。</span>
       </div>
     </div>
   </div>
 
-  <div class="top4-spotlight-card rank-2" style="background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); border: 2px solid #2563eb; border-radius: 12px; padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #e2e8f0; padding-bottom:14px;">
+  <div class="top4-spotlight-card rank-2" style="background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); border: 2px solid #2563eb; border-radius: 10px; padding: 16px 18px; box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:12px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
       <div>
-        <div style="display:inline-block; background:#2563eb; color:#fff; font-size:0.8rem; font-weight:800; padding:4px 10px; border-radius:20px; margin-bottom:6px;">
+        <div style="display:inline-block; background:#2563eb; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:16px; margin-bottom:4px;">
           ⚡ 极简高性价比 · 新手与学生党推荐
         </div>
-        <h3 style="margin:4px 0 6px 0; font-size:1.45rem; color:#0f172a;">【第 2 名】飞猫云</h3>
-        <div style="font-size:0.9rem; color:#64748b;">
+        <h3 style="margin:2px 0 4px 0; font-size:1.22rem; color:#0f172a;">【第 2 名】飞猫云</h3>
+        <div style="font-size:0.84rem; color:#64748b;">
           架构体系：<strong>IEPL 高速专线与自研客户端优化中继</strong> · 节点地区：<strong>香港、日本、新加坡、美国</strong>
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.25rem; font-weight:bold; color:#dc2626; margin-bottom:8px;">84 元/年</div>
-        <a href="https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.95rem; padding:10px 22px;">
+        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">84 元/年</div>
+        <a href="https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg">
           👉 官网注册与配置通道 &rarr;
         </a>
       </div>
     </div>
 
-    <div style="margin-bottom:16px;">
-      <p style="font-size:0.98rem; color:#334155; line-height:1.7; margin-bottom:12px;">全站第二主推服务。主打小流量低门槛年付、自研客户端与 IEPL 线路支持，折合月付成本低，适合轻度使用与备用节点场景。</p>
-      <div style="margin-bottom:12px;"><span style="font-size:0.9rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">flycat888</code> <span style="font-size:0.82rem; color:#64748b;">(新用户购买季付及以上 8 折，适用范围以结算页为准)</span></div>
+    <div style="margin-bottom:12px;">
+      <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第二主推服务。主打小流量低门槛年付、自研客户端与 IEPL 线路支持，折合月付成本低，适合轻度使用与备用节点场景。</p>
+      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">flycat888</code> <span style="font-size:0.8rem; color:#64748b;">(新用户购买季付及以上 8 折，适用范围以结算页为准)</span></div>
     </div>
 
     <div class="provider-specs-grid">
       <div class="provider-spec-item">
         <strong>💰 套餐规格与流量：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>学生版：84 元/年，50GB/月（折合 7 元/月）</li><li>星耀版：25 元/月，150GB/月</li>
         </ul>
       </div>
       <div class="provider-spec-item">
         <strong>🌐 传输协议与客户端：</strong>
-        <p style="margin:4px 0 6px 0; font-size:0.88rem; color:#334155;">协议：Shadowsocks, Trojan</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;">支持：自研客户端, Clash, Shadowrocket, sing-box</p>
+        <p style="margin:2px 0 4px 0; font-size:0.82rem; color:#334155;">协议：Shadowsocks, Trojan</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;">支持：自研客户端, Clash, Shadowrocket, sing-box</p>
       </div>
       <div class="provider-spec-item">
         <strong>🎯 核心适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">低频日常文献查阅、轻量网页浏览、微信海外版/Telegram/WhatsApp 消息实时收发、香港直连专线轻度影音与学术文献检索</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">低频日常文献查阅、轻量网页浏览、微信海外版/Telegram/WhatsApp 消息实时收发、香港直连专线轻度影音与学术文献检索</p>
       </div>
       <div class="provider-spec-item">
         <strong>👥 精准匹配适用人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">高校学生党、预算敏感型白领、新手小白、需要跨平台一键傻瓜式连接的长辈设备、需要第二条备用低成本梯子的稳健用户</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">高校学生党、预算敏感型白领、新手小白、需要跨平台一键傻瓜式连接的长辈设备、需要第二条备用低成本梯子的稳健用户</p>
       </div>
     </div>
 
-    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px; margin-top:14px;">
-      <div style="margin-bottom:8px;">
+    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; margin-top:10px;">
+      <div style="margin-bottom:4px;">
         <span class="badge-ai-pill">🤖 AI 解锁测评</span>
-        <span style="font-size:0.88rem; color:#065f46; line-height:1.6;">香港与新加坡专线节点全面支持 ChatGPT 网页端与移动端官方 App、Claude 官方网页交互，适合日常高频 AI 搜索问答、代码辅助与文本翻译。</span>
+        <span style="font-size:0.82rem; color:#065f46; line-height:1.5;">香港与新加坡专线节点全面支持 ChatGPT 网页端与移动端官方 App、Claude 官方网页交互，适合日常高频 AI 搜索问答、代码辅助与文本翻译。</span>
       </div>
       <div>
         <span class="badge-stream-pill">🎬 流媒体兼容性</span>
-        <span style="font-size:0.88rem; color:#1e40af; line-height:1.6;">流畅支持 YouTube 1080P/4K 高清播放、Netflix 基础解锁与日常视频点播，香港/新加坡节点网络响应极其轻快。</span>
+        <span style="font-size:0.82rem; color:#1e40af; line-height:1.5;">流畅支持 YouTube 1080P/4K 高清播放、Netflix 基础解锁与日常视频点播，香港/新加坡节点网络响应极其轻快。</span>
       </div>
     </div>
   </div>
 
-  <div class="top4-spotlight-card rank-3" style="background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%); border: 2px solid #8b5cf6; border-radius: 12px; padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #e2e8f0; padding-bottom:14px;">
+  <div class="top4-spotlight-card rank-3" style="background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%); border: 2px solid #8b5cf6; border-radius: 10px; padding: 16px 18px; box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:12px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
       <div>
-        <div style="display:inline-block; background:#8b5cf6; color:#fff; font-size:0.8rem; font-weight:800; padding:4px 10px; border-radius:20px; margin-bottom:6px;">
+        <div style="display:inline-block; background:#8b5cf6; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:16px; margin-bottom:4px;">
           🎬 晚高峰大带宽 · 影音流媒体狂飙首选
         </div>
-        <h3 style="margin:4px 0 6px 0; font-size:1.45rem; color:#0f172a;">【第 3 名】暮光加速</h3>
-        <div style="font-size:0.9rem; color:#64748b;">
+        <h3 style="margin:2px 0 4px 0; font-size:1.22rem; color:#0f172a;">【第 3 名】暮光加速</h3>
+        <div style="font-size:0.84rem; color:#64748b;">
           架构体系：<strong>大带宽优化高速内网专线集群</strong> · 节点地区：<strong>香港、台湾、日本、新加坡、美国</strong>
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.25rem; font-weight:bold; color:#dc2626; margin-bottom:8px;">20 元/月</div>
-        <a href="https://quanqi12.twilightaff.com/#/?code=beAVqNPf" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.95rem; padding:10px 22px;">
+        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月</div>
+        <a href="https://quanqi12.twilightaff.com/#/?code=beAVqNPf" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg">
           👉 官网注册与配置通道 &rarr;
         </a>
       </div>
     </div>
 
-    <div style="margin-bottom:16px;">
-      <p style="font-size:0.98rem; color:#334155; line-height:1.7; margin-bottom:12px;">全站第三主推服务。侧重晚高峰影音表现与高带宽需求，拥有丰富的常规月付与大流量包配置，适合流媒体与大流量重度用户。</p>
-      <div style="margin-bottom:12px;"><span style="font-size:0.9rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">mm88</code> <span style="font-size:0.82rem; color:#64748b;">(8 折优惠码，适用套餐和有效期以结算页为准)</span></div>
+    <div style="margin-bottom:12px;">
+      <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第三主推服务。侧重晚高峰影音表现与高带宽需求，拥有丰富的常规月付与大流量包配置，适合流媒体与大流量重度用户。</p>
+      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">mm88</code> <span style="font-size:0.8rem; color:#64748b;">(8 折优惠码，适用套餐和有效期以结算页为准)</span></div>
     </div>
 
     <div class="provider-specs-grid">
       <div class="provider-spec-item">
         <strong>💰 套餐规格与流量：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>基础版：20 元/月，120GB/月</li><li>标准版：40 元/月，300GB/月</li><li>旗舰版：100 元/月，700GB/月</li><li>至尊版：180 元/月，1.5TB/月</li>
         </ul>
       </div>
       <div class="provider-spec-item">
         <strong>🌐 传输协议与客户端：</strong>
-        <p style="margin:4px 0 6px 0; font-size:0.88rem; color:#334155;">协议：Shadowsocks, Trojan, VLESS</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;">支持：Clash, Shadowrocket, sing-box, Stash</p>
+        <p style="margin:2px 0 4px 0; font-size:0.82rem; color:#334155;">协议：Shadowsocks, Trojan, VLESS</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;">支持：Clash, Shadowrocket, sing-box, Stash</p>
       </div>
       <div class="provider-spec-item">
         <strong>🎯 核心适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">适合 4K 高清流媒体播放、大流量媒体资源获取与多端日常影音需求，节点配置侧重大带宽优化。</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">适合 4K 高清流媒体播放、大流量媒体资源获取与多端日常影音需求，节点配置侧重大带宽优化。</p>
       </div>
       <div class="provider-spec-item">
         <strong>👥 精准匹配适用人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">重度流媒体影音追剧党、影视剪辑师与设计师、动漫与 4K 收藏家、对晚高峰抗断流有极高要求的大流量家庭或合租团队</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">重度流媒体影音追剧党、影视剪辑师与设计师、动漫与 4K 收藏家、对晚高峰抗断流有极高要求的大流量家庭或合租团队</p>
       </div>
     </div>
 
-    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px; margin-top:14px;">
-      <div style="margin-bottom:8px;">
+    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; margin-top:10px;">
+      <div style="margin-bottom:4px;">
         <span class="badge-ai-pill">🤖 AI 解锁测评</span>
-        <span style="font-size:0.88rem; color:#065f46; line-height:1.6;">美区与亚太节点支持 ChatGPT 与 Claude 等常见 AI 工具对话，响应较为平稳。</span>
+        <span style="font-size:0.82rem; color:#065f46; line-height:1.5;">美区与亚太节点支持 ChatGPT 与 Claude 等常见 AI 工具对话，响应较为平稳。</span>
       </div>
       <div>
         <span class="badge-stream-pill">🎬 流媒体兼容性</span>
-        <span style="font-size:0.88rem; color:#1e40af; line-height:1.6;">针对 YouTube 4K 及主流流媒体点播进行带宽优化，支持日常高清视频缓冲，实际播放效果视本地网络带宽而定。</span>
+        <span style="font-size:0.82rem; color:#1e40af; line-height:1.5;">针对 YouTube 4K 及主流流媒体点播进行带宽优化，支持日常高清视频缓冲，实际播放效果视本地网络带宽而定。</span>
       </div>
     </div>
   </div>
 
-  <div class="top4-spotlight-card rank-4" style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); border: 2px solid #10b981; border-radius: 12px; padding: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #e2e8f0; padding-bottom:14px;">
+  <div class="top4-spotlight-card rank-4" style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); border: 2px solid #10b981; border-radius: 10px; padding: 16px 18px; box-shadow: 0 3px 12px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:12px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
       <div>
-        <div style="display:inline-block; background:#10b981; color:#fff; font-size:0.8rem; font-weight:800; padding:4px 10px; border-radius:20px; margin-bottom:6px;">
+        <div style="display:inline-block; background:#10b981; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:16px; margin-bottom:4px;">
           🛡️ 轻量纯粹专线 · 开发者低延迟备用神器
         </div>
-        <h3 style="margin:4px 0 6px 0; font-size:1.45rem; color:#0f172a;">【第 4 名】微风网络</h3>
-        <div style="font-size:0.9rem; color:#64748b;">
+        <h3 style="margin:2px 0 4px 0; font-size:1.22rem; color:#0f172a;">【第 4 名】微风网络</h3>
+        <div style="font-size:0.84rem; color:#64748b;">
           架构体系：<strong>纯粹轻量专线架构与通用订阅</strong> · 节点地区：<strong>香港、日本、新加坡、美国</strong>
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.25rem; font-weight:bold; color:#dc2626; margin-bottom:8px;">16 元/月 (100GB) · 年付 137 元/年 (100GB/月)</div>
-        <a href="https://edp01.breezenetaff.com/#/?code=vxDUI8kY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.95rem; padding:10px 22px;">
+        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">16 元/月 (100GB) · 年付 137 元/年 (100GB/月)</div>
+        <a href="https://edp01.breezenetaff.com/#/?code=vxDUI8kY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg">
           👉 官网注册与配置通道 &rarr;
         </a>
       </div>
     </div>
 
-    <div style="margin-bottom:16px;">
-      <p style="font-size:0.98rem; color:#334155; line-height:1.7; margin-bottom:12px;">全站第四主推服务。定位为轻量专线方案，支持低流量年付与客户端一键导入。架构纯粹干净，适合作为开发者与极客的低延迟应急备份。</p>
+    <div style="margin-bottom:12px;">
+      <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第四主推服务。定位为轻量专线方案，支持低流量年付与客户端一键导入。架构纯粹干净，适合作为开发者与极客的低延迟应急备份。</p>
       
     </div>
 
     <div class="provider-specs-grid">
       <div class="provider-spec-item">
         <strong>💰 套餐规格与流量：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>常规月付轻量档：16 元/月，100GB/月（来源：用户核验入口月付资料）</li><li>常规月付进阶档：32 元/月，220GB/月（来源：官方套餐进阶档位）</li><li>年付轻量优惠档：137 元/年，100GB/月（折合约 11.4 元/月；来源：公开目录年付记录）</li><li>一次性流量包：150 元 / 500GB，不限时</li>
         </ul>
       </div>
       <div class="provider-spec-item">
         <strong>🌐 传输协议与客户端：</strong>
-        <p style="margin:4px 0 6px 0; font-size:0.88rem; color:#334155;">协议：Shadowsocks, Trojan</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;">支持：自研客户端, Clash, Shadowrocket</p>
+        <p style="margin:2px 0 4px 0; font-size:0.82rem; color:#334155;">协议：Shadowsocks, Trojan</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;">支持：自研客户端, Clash, Shadowrocket</p>
       </div>
       <div class="provider-spec-item">
         <strong>🎯 核心适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">GitHub 代码仓库拉取与提交极速加速、Docker 镜像源下载、海外 API 接口实时低延迟调用、跨国 SSH 远程终端连接与调试</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">GitHub 代码仓库拉取与提交极速加速、Docker 镜像源下载、海外 API 接口实时低延迟调用、跨国 SSH 远程终端连接与调试</p>
       </div>
       <div class="provider-spec-item">
         <strong>👥 精准匹配适用人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.5;">专业开发者、程序员、技术极客、外贸技术支持人员、需要低延迟纯粹专线作为第二应急备份梯子的资深玩家</p>
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">专业开发者、程序员、技术极客、外贸技术支持人员、需要低延迟纯粹专线作为第二应急备份梯子的资深玩家</p>
       </div>
     </div>
 
-    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px; margin-top:14px;">
-      <div style="margin-bottom:8px;">
+    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:6px; padding:10px 12px; margin-top:10px;">
+      <div style="margin-bottom:4px;">
         <span class="badge-ai-pill">🤖 AI 解锁测评</span>
-        <span style="font-size:0.88rem; color:#065f46; line-height:1.6;">美西高权重原生 IP 池，深度适配 OpenAI API 接口调用、Claude 开发者控制台及主流跨平台第三方 AI 客户端（如 NextChat, Chatbox）。</span>
+        <span style="font-size:0.82rem; color:#065f46; line-height:1.5;">美西高权重原生 IP 池，深度适配 OpenAI API 接口调用、Claude 开发者控制台及主流跨平台第三方 AI 客户端（如 NextChat, Chatbox）。</span>
       </div>
       <div>
         <span class="badge-stream-pill">🎬 流媒体兼容性</span>
-        <span style="font-size:0.88rem; color:#1e40af; line-height:1.6;">支持主流 YouTube 4K、Netflix 常见区域流媒体播放，线路分流清晰明朗，不占用多余规则资源。</span>
+        <span style="font-size:0.82rem; color:#1e40af; line-height:1.5;">支持主流 YouTube 4K、Netflix 常见区域流媒体播放，线路分流清晰明朗，不占用多余规则资源。</span>
       </div>
     </div>
   </div>
@@ -1453,28 +1462,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 </p>
 <div style="display:flex; flex-direction:column; gap:28px; margin-bottom:40px;">
 
-  <div class="provider-card-full is-primary" id="provider-rank-1" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full is-primary" id="provider-rank-1" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#d97706; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#d97706; font-size:0.74rem; padding:2px 7px;">
           👑 综合全能第一 · 旗舰 IEPL 专线
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 1 名】全球云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国、台湾及欧洲多国 · 架构类型：全专线 IEPL 高速内网隧道
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月</div>
-        <a href="https://hueue09.gcvipaff.com/#/?code=z8U9aaa4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">20 元/月</div>
+        <a href="https://hueue09.gcvipaff.com/#/?code=z8U9aaa4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       全站第一主推服务。多国家和地区节点、智能分流与灵活套餐，支持月付及大流量梯度，适合希望一站式解决多设备稳定连接的用户。
     </p>
 
@@ -1486,31 +1495,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>轻量版：20 元/月，120GB/月</li><li>进阶版：40 元/月，300GB/月</li><li>重度版：100 元/月，700GB/月</li><li>大户版：180 元/月，1500GB/月</li><li>私人专线：680 元/月，500GB/月</li><li>一次性流量：100 元/100GB、360 元/400GB、700 元/800GB</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国、台湾及欧洲多国</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box, Stash, 通用订阅</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国、台湾及欧洲多国</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box, Stash, 通用订阅</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           4K 高清流媒体播放、多国跨境店铺日常管理、跨国视频会议 (Zoom/Teams/Google Meet) 与大文件传输
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           跨境电商出海团队、外贸外企白领、重度 4K 影音爱好者、AI 深度从业者与科研学者、追求一站式多设备稳定连接的高要求用户
         </p>
       </div>
@@ -1533,28 +1542,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full is-primary" id="provider-rank-2" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full is-primary" id="provider-rank-2" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#2563eb; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#2563eb; font-size:0.74rem; padding:2px 7px;">
           ⚡ 极简高性价比 · 新手与学生党推荐
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 2 名】飞猫云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国 · 架构类型：IEPL 高速专线与自研客户端优化中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">84 元/年</div>
-        <a href="https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">84 元/年</div>
+        <a href="https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       全站第二主推服务。主打小流量低门槛年付、自研客户端与 IEPL 线路支持，折合月付成本低，适合轻度使用与备用节点场景。
     </p>
 
@@ -1566,31 +1575,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>学生版：84 元/年，50GB/月（折合 7 元/月）</li><li>星耀版：25 元/月，150GB/月</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>自研客户端, Clash, Shadowrocket, sing-box</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>自研客户端, Clash, Shadowrocket, sing-box</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           低频日常文献查阅、轻量网页浏览、微信海外版/Telegram/WhatsApp 消息实时收发、香港直连专线轻度影音与学术文献检索
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           高校学生党、预算敏感型白领、新手小白、需要跨平台一键傻瓜式连接的长辈设备、需要第二条备用低成本梯子的稳健用户
         </p>
       </div>
@@ -1613,28 +1622,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full is-primary" id="provider-rank-3" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full is-primary" id="provider-rank-3" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#2563eb; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#2563eb; font-size:0.74rem; padding:2px 7px;">
           🎬 晚高峰大带宽 · 影音流媒体狂飙首选
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 3 名】暮光加速
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、台湾、日本、新加坡、美国 · 架构类型：大带宽优化高速内网专线集群
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月</div>
-        <a href="https://quanqi12.twilightaff.com/#/?code=beAVqNPf" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">20 元/月</div>
+        <a href="https://quanqi12.twilightaff.com/#/?code=beAVqNPf" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       全站第三主推服务。侧重晚高峰影音表现与高带宽需求，拥有丰富的常规月付与大流量包配置，适合流媒体与大流量重度用户。
     </p>
 
@@ -1646,31 +1655,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>基础版：20 元/月，120GB/月</li><li>标准版：40 元/月，300GB/月</li><li>旗舰版：100 元/月，700GB/月</li><li>至尊版：180 元/月，1.5TB/月</li><li>年付轻量版：109 元，70GB/年</li><li>一次性流量：219 元/150GB、529 元/400GB、959 元/800GB</li><li>私人定制：600 元/月</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、台湾、日本、新加坡、美国</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan, VLESS</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box, Stash</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、台湾、日本、新加坡、美国</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan, VLESS</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box, Stash</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           适合 4K 高清流媒体播放、大流量媒体资源获取与多端日常影音需求，节点配置侧重大带宽优化。
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           重度流媒体影音追剧党、影视剪辑师与设计师、动漫与 4K 收藏家、对晚高峰抗断流有极高要求的大流量家庭或合租团队
         </p>
       </div>
@@ -1693,58 +1702,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full is-primary" id="provider-rank-4" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full is-primary" id="provider-rank-4" style="border-left: 4px solid #2563eb; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#2563eb; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#2563eb; font-size:0.74rem; padding:2px 7px;">
           🛡️ 轻量纯粹专线 · 开发者低延迟备用神器
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 4 名】微风网络
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国 · 架构类型：纯粹轻量专线架构与通用订阅
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">16 元/月 (100GB) · 年付 137 元/年 (100GB/月)</div>
-        <a href="https://edp01.breezenetaff.com/#/?code=vxDUI8kY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">16 元/月 (100GB) · 年付 137 元/年 (100GB/月)</div>
+        <a href="https://edp01.breezenetaff.com/#/?code=vxDUI8kY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       全站第四主推服务。定位为轻量专线方案，支持低流量年付与客户端一键导入。架构纯粹干净，适合作为开发者与极客的低延迟应急备份。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>常规月付轻量档：16 元/月，100GB/月（来源：用户核验入口月付资料）</li><li>常规月付进阶档：32 元/月，220GB/月（来源：官方套餐进阶档位）</li><li>年付轻量优惠档：137 元/年，100GB/月（折合约 11.4 元/月；来源：公开目录年付记录）</li><li>一次性流量包：150 元 / 500GB，不限时</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>自研客户端, Clash, Shadowrocket</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>自研客户端, Clash, Shadowrocket</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           GitHub 代码仓库拉取与提交极速加速、Docker 镜像源下载、海外 API 接口实时低延迟调用、跨国 SSH 远程终端连接与调试
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           专业开发者、程序员、技术极客、外贸技术支持人员、需要低延迟纯粹专线作为第二应急备份梯子的资深玩家
         </p>
       </div>
@@ -1767,58 +1776,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-5" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-5" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 稳健中转 · 明确流量档位
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 5 名】U1S1
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：BGP 多线中继优化架构
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月 · 120GB/月</div>
-        <a href="https://quanqiu.v2yunvipaff.com/#/?code=YCf9VJsS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">20 元/月 · 120GB/月</div>
+        <a href="https://quanqiu.v2yunvipaff.com/#/?code=YCf9VJsS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       U1S1 提供多节点分流与通用订阅支持。定位偏向“稳定、标注清楚”的长期自用方案。公开资料强调中转优化、原生 IP 解锁与明确的流量档位，更适合在意实际可用性、又不想研究复杂配置的用户。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>月付套餐：基础体验版 20 元 / 120GB；日常影音版 40 元 / 300GB；重度冲浪版 100 元 / 700GB；尊享大户版 180 元 / 1500GB。</li><li>一次性套餐：580 元 / 1000GB，不限时流量包。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           日常 Google 检索资料、Twitter/X 资讯阅读、日常办公协同、不限时大流量包长效备用
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           追求简单稳定、不愿折腾复杂规则的日常白领、独立创作者、中度网络冲浪者
         </p>
       </div>
@@ -1841,58 +1850,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-6" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-6" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 平价日常 · 移动端代步
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 6 名】极连云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：亚太优质网络中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">15.5 元/月 · 100GB/月（常规月付）</div>
-        <a href="https://quanqiu.jlyvipaff.com/#/?code=NplcUEEV" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">15.5 元/月 · 100GB/月（常规月付）</div>
+        <a href="https://quanqiu.jlyvipaff.com/#/?code=NplcUEEV" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       极连云 提供多节点分流与通用订阅支持。主打 IPLC 内网专线的连通稳定性，重点突出抗封锁、防 QoS，以及香港、日本方向的低延迟体验；对敏感时期仍需保持连接、同时使用 AI 与流媒体的用户更有吸引力。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>轻量体验年付：96 元/年，每月 60GB，折合 8 元/月但需一次支付全年费用。</li><li>常规月付：基础版 15.5 元 / 100GB；进阶版 30.5 元 / 200GB；旗舰版 65.5 元 / 500GB；尊享版 120.5 元 / 1000GB。</li><li>一次性套餐：399 元 / 1000GB，不限时流量包。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           通勤途中移动网络下使用、轻量社交沟通、海外资讯聚合订阅、临时海外支付与资料查询
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           15 元预算档位的入门级用户、手机端移动冲浪党、轻度社交与网页资讯读者
         </p>
       </div>
@@ -1915,58 +1924,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-7" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-7" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 学术文献 · 科研助手
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 7 名】光年梯
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：教育网与科研线路优化中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">18 元/月 · 110GB/月</div>
-        <a href="https://quanqiu.gntaff.com/#/?code=qUJeOegs" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">18 元/月 · 110GB/月</div>
+        <a href="https://quanqiu.gntaff.com/#/?code=qUJeOegs" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       光年梯 提供多节点分流与通用订阅支持。把易用性放在前面，强调客户端一键导入、三网线路优化和清晰的套餐档位。它更适合作为新手第一次接触机场时的轻量选择，并兼顾 ChatGPT 等常用服务的访问需求。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>常规月付：入门版 18 元 / 110GB；晋级版 34 元 / 220GB；专业版 68 元 / 450GB；至尊版 130 元 / 900GB。</li><li>独享方案：私人专线 680 元/月，500GB/月。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           Google Scholar 检索、IEEE / arXiv / Springer 论文下载、外文图书查阅、海外学术论坛交流
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           大学高校研究生、学术科研人员、经常阅读外文文献与论文下载的知识工作者
         </p>
       </div>
@@ -1989,58 +1998,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-8" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-8" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 均衡主力 · 稳定输出
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 8 名】光速云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：多节点混合中继网络
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">17 元/月 · 110GB/月</div>
-        <a href="https://quanqiu.gsyaff.com/#/?code=AAkbe2W6" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">17 元/月 · 110GB/月</div>
+        <a href="https://quanqiu.gsyaff.com/#/?code=AAkbe2W6" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       光速云 提供多节点分流与通用订阅支持。核心叙事是 BGP 入口与低延迟中转，兼顾三网接入和客户端快速导入。相较单纯堆流量，它更适合网页、即时通信及轻度游戏等对响应速度更敏感的日常场景。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>轻量年付：99 元/年，每月 59GB，折合约 8.25 元/月。</li><li>常规月付：极速版 17 元 / 110GB；流光版 34 元 / 220GB；量子版 68 元 / 450GB；无界版 130 元 / 900GB。</li><li>一次性套餐：680 元 / 1000GB，不限时流量包。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           海外社交媒体 (Instagram/X) 刷帖、日常跨境邮件处理、晚间轻度影音放松
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           日常主力网络加速需求者、外贸业务联络员、中度多媒体浏览者
         </p>
       </div>
@@ -2063,58 +2072,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-9" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-9" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 极限超低价 · 新手尝鲜
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 9 名】唯兔云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：轻量经济型网络中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">14.9 元/月 · 100GB/月</div>
-        <a href="https://quanqiu.vipaff.cc/#/?code=c4sOJBXE" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">14.9 元/月 · 100GB/月</div>
+        <a href="https://quanqiu.vipaff.cc/#/?code=c4sOJBXE" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       唯兔云 提供多节点分流与通用订阅支持。采用 VLESS 作为主要协议卖点，并强调 60+ 节点、三网优化与智能负载均衡。节点选择空间和自动调度能力是它的差异点，适合希望减少手动换线频率的进阶用户。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>入门年付：79.9 元/年，每月 45GB，折合约 6.66 元/月。</li><li>基础版 100GB/月：14.9 元/月；40.9 元/季；142.9 元/年。</li><li>进阶版 200GB/月：29.9 元/月；80.9 元/季；286.9 元/年。</li><li>高级版 500GB/月：59.9 元/月；161.9 元/季；547.9 元/年。</li><li>尊享版 1000GB/月：119.9 元/月；323.9 元/季；1150.9 元/年。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           手机端小火箭轻度代步、海外短视频浏览、基础网页访问与即时社交通信
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           极限月付单价敏感型用户（15元以内预算）、手机/平板轻量冲浪新手
         </p>
       </div>
@@ -2137,58 +2146,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-10" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-10" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 极简备用 · 基础保活
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 10 名】宇宙云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：常用核心区域中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">14.9 元/月 · 100GB/月</div>
-        <a href="https://quanqiu.yuzoucloud.cc/#/?code=f3DHb9Gj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">14.9 元/月 · 100GB/月</div>
+        <a href="https://quanqiu.yuzoucloud.cc/#/?code=f3DHb9Gj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       宇宙云 提供多节点分流与通用订阅支持。走“多地区覆盖 + 大流量性价比”路线，公开资料还提到三网接入优化和主流客户端订阅导入。适合经常切换不同国家或地区节点、又希望控制月度成本的用户。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>公开入门档：14.9 元/月，100GB/月。</li><li>完整套餐梯度：公开资料整理。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           多设备备用网络保障、突发断网应急切换、轻量海外科技新闻阅读
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           低频备用需求者、备用机网络分流用户、日常极简资讯读者
         </p>
       </div>
@@ -2211,58 +2220,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-11" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-11" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 跨境会议 · 商务专线
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 11 名】速界
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：亚太优质低延迟中继集群
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">25 元/月 · 150GB/月</div>
-        <a href="https://quanqiu.speedworldaff.cc/#/?code=kY825Zat" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">25 元/月 · 150GB/月</div>
+        <a href="https://quanqiu.speedworldaff.cc/#/?code=kY825Zat" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       速界 提供多节点分流与通用订阅支持。卖点集中在高带宽 IPLC 专线和晚高峰承载，宣传方向覆盖低延迟与 4K/8K 流媒体。它更适合对高峰时段速度、高清播放和大流量传输要求较高的重度用户。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>极速版：25 元/月；71.25 元/季；135 元/半年；255 元/年；480 元/两年；630 元/三年。已知入门档为 150GB/月。</li><li>超速版：50 元/月；142.5 元/季；270 元/半年；510 元/年；960 元/两年；1260 元/三年。</li><li>光速版：100 元/月；285 元/季；540 元/半年；1020 元/年；1920 元/两年；2520 元/三年。</li><li>跃迁版：200 元/月；570 元/季；1080 元/半年；2040 元/年；3840 元/两年；5040 元/三年。</li><li>年付体验包：88 元/年；公开资料整理的公开价格表未同时列明各高阶档流量，写作时不要自行推算。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           跨国高清视频会议、海外独立站后台商品维护、高清图片素材批量上传与同步
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           自由职业者、外贸独立站运营者、需要较宽裕带宽与大流量的跨境业务人员
         </p>
       </div>
@@ -2285,58 +2294,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-12" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-12" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 稳定月付 · 影音顺畅
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 12 名】SOGO 云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：成熟 BGP 隧道中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月 · 120GB/月（活动入门档）</div>
-        <a href="https://afasfw.sogotztz2.sbs/#/?code=Mgoqf6KP" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">20 元/月 · 120GB/月（活动入门档）</div>
+        <a href="https://afasfw.sogotztz2.sbs/#/?code=Mgoqf6KP" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       SOGO 云 提供多节点分流与通用订阅支持。突出全球节点、专线优化和多设备使用，套餐从较大的月流量起步。内容角度可聚焦家庭或小团队的多端并发，以及 4K 流媒体和 AI 工具同时使用的便利性。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>活动入门档：20 元/月，120GB/月；常规基础版为 25 元/月，120GB/月。</li><li>常规月付：优选版 50 元 / 250GB；强化版 100 元 / 500GB；顶配版 200 元 / 1000GB。</li><li>一次性套餐：100 元 / 100GB；200 元 / 250GB；400 元 / 500GB；800 元 / 1000GB。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           海外热播剧集连载追剧、海外账号登录与双重验证、日常社交通信
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           注重操作直观、偏好中继路线与稳定月付的普通冲浪用户
         </p>
       </div>
@@ -2359,58 +2368,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-13" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-13" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 10元应急 · 防断连必备
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 13 名】快狸
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：超轻量精简中继架构
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">10 元/月 · 30GB/月（活动入门档）</div>
-        <a href="https://quanqiu.kuailicloud.cc/#/?code=vuYET5Qj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">10 元/月 · 30GB/月（活动入门档）</div>
+        <a href="https://quanqiu.kuailicloud.cc/#/?code=vuYET5Qj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       快狸 提供多节点分流与通用订阅支持。强调中转线路优化和简单配置，三网接入取向较均衡，月付即提供较大流量。适合不想折腾规则或客户端、只需要一套日常主力订阅的用户。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>活动入门档：10 元/月，30GB/月；活动库存与持续时间以实时页面为准。</li><li>轻量套餐：森狸年付小包 120 元/年，每月 30GB；月猩月付小包 15 元/月，50GB/月。</li><li>常规月付：小狸基础 22 元 / 100GB；灵理标准 35 元 / 250GB；夜理强化 95 元 / 500GB；天狸顶配 180 元 / 1000GB。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           临时收取海外平台验证码、应急查阅外网开发文档、关键时刻网络冗余备用
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           每月仅需少量流量应急的“防断联”备用党、极限预算用户（10元档）
         </p>
       </div>
@@ -2433,58 +2442,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-14" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-14" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 跨屏多端 · 社交协同
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 14 名】二猫云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：跨终端通用优化中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月 · 100GB/月</div>
-        <a href="https://quanqiu.2maoyunaff.cc/#/?code=zy39Ip8E" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">20 元/月 · 100GB/月</div>
+        <a href="https://quanqiu.2maoyunaff.cc/#/?code=zy39Ip8E" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       二猫云 提供多节点分流与通用订阅支持。以“中转 + 专线”的混合线路平衡成本和稳定性，并把原生 IP、流媒体解锁与较大月流量作为组合亮点。适合预算适中、主要需求是追剧和常规海外服务的用户。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>白猫套餐：20 元/月，100GB/月。</li><li>橘猫畅玩版：40 元/月，200GB/月。</li><li>牛奶猫尊享版：80 元/月，400GB/月。</li><li>黑猫无限版：160 元/月，800GB/月。</li><li>补充：公开资料整理记录为暂无一次性不限时订阅；线路构成和客户端限制仍需实测。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           跨平台客户端通用订阅快速导入、多设备无缝切换、海外短视频内容发布与互动
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           多终端（手机+平板+电脑）日常协同的数码玩家与社交达人
         </p>
       </div>
@@ -2507,58 +2516,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-15" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-15" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 大带宽狂飙 · 进阶首选
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 15 名】一翻云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：大吞吐高配中继网络
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">30 元/月 · 150GB/月</div>
-        <a href="https://quanqiu.1flyunaff.cc/#/?code=gJtw80i4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">30 元/月 · 150GB/月</div>
+        <a href="https://quanqiu.1flyunaff.cc/#/?code=gJtw80i4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       一翻云 提供多节点分流与通用订阅支持。入门档就提供 150GB，定位明显偏向高流量用户；同时强调 VLESS / Reality 协议与三网优化。适合视频、下载等月度消耗较大，并在意新协议抗封锁能力的使用者。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>VIP1 · 150GB/月：30 元/月；86 元/季；162 元/半年；306 元/年；576 元/两年；756 元/三年。</li><li>VIP2 · 300GB/月：60 元/月；171 元/季；324 元/半年；612 元/年；1152 元/两年；1512 元/三年。</li><li>VIP3 · 600GB/月：120 元/月；342 元/季；648 元/半年；1224 元/年；2304 元/两年；3024 元/三年。</li><li>VIP4 · 1200GB/月：240 元/月；684 元/季；1296 元/半年；2448 元/年；4608 元/两年；6048 元/三年。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           长视频 4K 原画不卡顿、跨国大文件下载传输、大型游戏海外更新加速
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           对网络吞吐有较高要求、追求大带宽与高速加载的进阶冲浪爱好者
         </p>
       </div>
@@ -2581,58 +2590,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-16" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-16" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 边缘接入 · 超低延迟
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 16 名】边缘节点 EdgeNova
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：Anycast 分布式边缘加速架构
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">25 元/月 · 120GB/月（常规月付）</div>
-        <a href="https://quanqi.edgenovaaff.cc/#/?code=8BBARdHw" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">25 元/月 · 120GB/月（常规月付）</div>
+        <a href="https://quanqi.edgenovaaff.cc/#/?code=8BBARdHw" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       边缘节点 EdgeNova 提供多节点分流与通用订阅支持。海外团队运营和 Reality 协议是主要辨识度，配合原生 IP 节点，使用场景偏向外服与 AI 工具。对能接受较技术化配置、看重抗封锁与落地 IP 属性的用户更合适。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>年付入门：108 元/年，每月 45GB，折合 9 元/月。</li><li>常规月付：标准版 25 元 / 120GB；进阶版 50 元 / 250GB；高级版 100 元 / 500GB；极限版 200 元 / 1000GB。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           高铁/机场蜂窝网络下快速建连、低延迟跨国企业微信/Slack 会话与推送
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           经常出差移动办公的商旅人士、对网络首包延迟极为敏感的即时通信用户
         </p>
       </div>
@@ -2655,58 +2664,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-17" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-17" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 极限学生档 · 单月9元
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 17 名】可信云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：基础经济型网络节点
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">9 元/月 · 45GB/月</div>
-        <a href="https://quanqiu.kosingaff.com/#/?code=NRG0tXKO" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">9 元/月 · 45GB/月</div>
+        <a href="https://quanqiu.kosingaff.com/#/?code=NRG0tXKO" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       可信云 提供多节点分流与通用订阅支持。品牌叙事聚焦长期稳定与售后服务，公开资料把 IEPL 专线、全平台支持及流媒体 / AI 兼容放在一起。适合愿意为服务响应和持续使用体验支付稍高月费的人。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>轻量月付：9 元/月，45GB/月。</li><li>常规月付：基础版 25 元 / 150GB；标准版 50 元 / 300GB；专业版 100 元 / 600GB；旗舰版 200 元 / 1200GB。</li><li>年付小包：96 元/年，60GB/年；该流量为全年总量，不应写成每月 60GB。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           外文文献快速查找、海外学术论坛浏览、基础社交网络消息查阅
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           追求极限超低月付单价的学生群体、轻度搜索与科研入门者
         </p>
       </div>
@@ -2729,28 +2738,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-18" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-18" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 多协议兼容 · 深度定制
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 18 名】浪网 WaveNet
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：多协议容灾高速网络
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">25 元/月 · 150GB/月</div>
-        <a href="https://langwang.wavenetaff.com/#/?code=pYe3kzd4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">25 元/月 · 150GB/月</div>
+        <a href="https://langwang.wavenetaff.com/#/?code=pYe3kzd4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       浪网 WaveNet 提供多节点分流与通用订阅支持。重点面向 ChatGPT、Claude 等 AI 应用和开发工具访问，同时采用买即品软件版 Shadowsocks 协议，并且不限制同时在线设备数量，更适合需要多端协作的用户。
     </p>
 
@@ -2762,31 +2771,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>用户确认入门价：25 元/月，150GB/月；公开资料整理记录的常规同流量档为 30 元/月。</li><li>常规月付：30 元 / 150GB；70 元 / 400GB；120 元 / 800GB；200 元 / 2TB。</li><li>其他周期：119 元/年，每月 80GB；私人定制 640 元/月，500GB/月。</li><li>一次性套餐：239 元 / 180GB；569 元 / 450GB；1099 元 / 900GB。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           多协议备选容灾、大流量多媒体资源获取、晚高峰抗干扰加速冲浪
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           对传输协议多样性有要求、偏好折腾客户端高级分流规则的进阶用户
         </p>
       </div>
@@ -2809,28 +2818,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-19" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-19" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 极客开发 · 代码加速
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 19 名】梯子云 LadderCloud
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：开发者友好型中继网络
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">25 元/月 · 125GB/月</div>
-        <a href="https://tiziyun3.ladderaff.com/#/?code=wI00rGj2" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">25 元/月 · 125GB/月</div>
+        <a href="https://tiziyun3.ladderaff.com/#/?code=wI00rGj2" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       梯子云 LadderCloud 提供多节点分流与通用订阅支持。全线采用 IEPL 企业专线，侧重缓解晚高峰拥堵，并提供 ChatGPT、Netflix 解锁。既有自研小白客户端，也兼容主流开源订阅，兼顾新手易用性和进阶用户的客户端选择。
     </p>
 
@@ -2842,31 +2851,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>基础版 · 125GB/月：25 元/月；71.25 元/季；135 元/半年；255 元/年；480 元/两年；675 元/三年。</li><li>进阶版 · 350GB/月：60 元/月；171 元/季；324 元/半年；612 元/年；1152 元/两年；1620 元/三年。</li><li>高级版 · 750GB/月：110 元/月；313.5 元/季；594 元/半年；1122 元/年；2112 元/两年；2970 元/三年。</li><li>顶配版 · 1.6TB/月：190 元/月；541.5 元/季；1026 元/半年；1938 元/年；3648 元/两年；5130 元/三年。</li><li>其他套餐：年付轻量版 89 元 / 60GB/年；一次性 169 元 / 120GB、449 元 / 350GB、849 元 / 700GB；私人定制 650 元/月。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           代码仓库极速同步、海外开发者论坛发帖、开源技术文档离线下载与构建
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           程序员、软件工程师、技术极客、开源社区重度代码贡献者
         </p>
       </div>
@@ -2889,28 +2898,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-20" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-20" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 一键上手 · 简洁省心
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 20 名】灵动云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：通用订阅自动化分发架构
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月 · 100GB/月</div>
-        <a href="https://lingdongyun.lingdongaff.com/#/?code=ibHQOYGt" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">20 元/月 · 100GB/月</div>
+        <a href="https://lingdongyun.lingdongaff.com/#/?code=ibHQOYGt" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       灵动云 提供多节点分流与通用订阅支持。全线采用较新的 VLESS 协议，覆盖香港、台湾、日本、新加坡和美国等常用地区；晚高峰观看 YouTube 4K 视频依然顺畅，适合看重节点覆盖与影音体验的用户。
     </p>
 
@@ -2922,31 +2931,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>拂风版 · 100GB/月：20 元/月；57 元/季；108 元/半年；204 元/年；384 元/两年；540 元/三年。</li><li>驭浪版 · 300GB/月：50 元/月；142.5 元/季；270 元/半年；510 元/年；960 元/两年；1350 元/三年。</li><li>破晓版 · 700GB/月：100 元/月；285 元/季；540 元/半年；1020 元/年；1920 元/两年；2700 元/三年。</li><li>凌霄版 · 1.5TB/月：180 元/月；513 元/季；972 元/半年；1836 元/年；3456 元/两年；4860 元/三年。</li><li>其他套餐：年付低频版 99 元 / 70GB/年；私人专线 620 元/月，500GB/月。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           手机小火箭与电脑 Clash 订阅秒速导入、日常即开即用、海外日常资讯浏览
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           追求一键配置、不需要深入理解复杂分流规则的泛大众普通用户
         </p>
       </div>
@@ -2969,28 +2978,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-21" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-21" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 纯净隐私 · 规则分流
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 21 名】隐形人
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：防 DNS 污染与高纯净出口中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">24 元/月 · 144GB/月</div>
-        <a href="https://yinxingren1.invisibleaff.com/#/?code=ISH1y2IF" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">24 元/月 · 144GB/月</div>
+        <a href="https://yinxingren1.invisibleaff.com/#/?code=ISH1y2IF" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       隐形人 提供多节点分流与通用订阅支持。由新加坡团队打造，采用全线纯专线与 VLESS 协议；强调 8K 视频快速加载，以及 AI 和流媒体原生解锁。套餐可随用随续，适合关注专线质量与续费灵活性的用户。
     </p>
 
@@ -3002,31 +3011,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>常规月付：白银纪元 24 元 / 144GB；黄金序列 48 元 / 360GB；铂金至臻 105 元 / 750GB；钻石穹顶 185 元 / 1600GB。</li><li>年付小包：星耀风暴 109 元/年，80GB/年。</li><li>一次性套餐：229 元 / 160GB（资料标注限 1 台设备）；549 元 / 420GB（2 台）；1199 元 / 1000GB（3 台）。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           私密网络访问、避免敏感数据外泄、防止公共 Wi-Fi 流量劫持与隐私窃取
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           注重网络隐私安全、注重防 DNS 污染与分流纯净度的安全敏感用户
         </p>
       </div>
@@ -3049,28 +3058,28 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-22" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-22" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 社交短视频 · 潮流冲浪
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 22 名】FlyV 飞V
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：高并发海外多媒体加速节点
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">25 元/月 · 150GB/月</div>
-        <a href="https://feiv289.flyvaff.com/#/?code=qQCT0BeY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">25 元/月 · 150GB/月</div>
+        <a href="https://feiv289.flyvaff.com/#/?code=qQCT0BeY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       FlyV 飞V 提供多节点分流与通用订阅支持。采用全线专线架构，所有节点按 1× 流量计费；支持 4K/8K 流媒体以及 ChatGPT 等 AI 工具，并强调不限速、不限制设备数量，适合多设备和高码率影音场景。
     </p>
 
@@ -3082,31 +3091,31 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         </div>
 
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>年付版：96 元/年，每月 60GB，折合 8 元/月。</li><li>常规月付：Lite 25 元 / 150GB；Plus 45 元 / 300GB；Blaze 85 元 / 600GB；Nova 150 元 / 1000GB。</li><li>一次性套餐：100 元 / 100GB，不限时流量包。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           海外社交动态实时刷新、高清短视频上传发布、外网热点追踪与多媒体缓冲
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           海外短视频（TikTok/Reels）创作者、海外社媒运营人员与潮流冲浪达人
         </p>
       </div>
@@ -3129,58 +3138,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-23" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-23" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 平衡之选 · 务实稳定
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 23 名】无忧链接
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：高可用双冗余中继架构
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">12.92 元/月 · 100GB/月</div>
-        <a href="https://wep01.worryfreeaff.com/#/?code=fOCJz3E2" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">12.92 元/月 · 100GB/月</div>
+        <a href="https://wep01.worryfreeaff.com/#/?code=fOCJz3E2" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       无忧链接 提供多节点分流与通用订阅支持。亮点在于通用订阅与主流客户端兼容，套餐从低频年付小包延伸到 1TB 月流量，并另有一次性流量包。服务商还宣称流媒体和 AI 工具可用，但具体节点与使用时段仍应由购买者自行核验。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>mini 链接：79 元/年，40GB/月。</li><li>舒心链接：12.92 元/月；34.68 元/季；65.28 元/半年；123.76 元/年，100GB/月。</li><li>省心链接：22.44 元/月；60.52 元/季；114.24 元/半年；214.88 元/年，200GB/月。</li><li>随心链接：52.36 元/月；140.76 元/季；266.56 元/半年；502.52 元/年，500GB/月。</li><li>忘忧链接：117 元/月；315 元/季；596 元/半年；1123 元/年，1TB/月。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           日常主力代步、轻度影音与办公协同、防止突发断网的稳定双冗余备用
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           追求 10-15 元价位段性能与价格平衡的务实性价比用户
         </p>
       </div>
@@ -3203,58 +3212,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-24" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-24" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 长效低频 · 年付备用
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 24 名】灵猫网络 Civet
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：长效轻量中继架构
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">85 元/年 · 45GB（流量重置口径未说明）</div>
-        <a href="https://vip02.civetaff.com/#/?code=MLVZXxQj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">85 元/年 · 45GB（流量重置口径未说明）</div>
+        <a href="https://vip02.civetaff.com/#/?code=MLVZXxQj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       灵猫网络 Civet 提供多节点分流与通用订阅支持。服务商资料主打 IPLC、1 倍流量、不限设备与通用订阅，覆盖从年付小包到月付 300GB 的阶梯。协议描述与流量重置规则存在公开信息冲突，文章中应将这些能力写为服务商宣称，而非实测结论。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>年付小包：85 元/年，45GB；流量重置口径未说明。</li><li>年付 Small：195 元/年，150GB；年付 Big：295 元/年，300GB。</li><li>季付 Small：65 元/季，150GB；季付 Big：125 元/季，300GB。</li><li>月付 Small：25 元/月，150GB；月付 Big：45 元/月，300GB。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           低频海外查阅特定资料、年付低门槛长效备用、突发网络需求救急
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           一年难得用几次、不愿每月操心续费与管理的长尾低频备用者
         </p>
       </div>
@@ -3277,58 +3286,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-25" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-25" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 超低折合 · 年付8元/月
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 25 名】闪跃 FlashLeap
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：经济型高密度中继网络
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">96 元/年 · 60GB/月（年付，折合约 8 元/月）</div>
-        <a href="https://vip02.flashleapaff.com/#/?code=bsjhVp9y" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">96 元/年 · 60GB/月（年付，折合约 8 元/月）</div>
+        <a href="https://vip02.flashleapaff.com/#/?code=bsjhVp9y" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       闪跃 FlashLeap 提供多节点分流与通用订阅支持。公开资料将其描述为 IPLC 专线与 1 倍流量方案，兼顾低延迟、通用订阅和定制客户端。流媒体、原生 IP 与 AI 工具支持均属于页面宣称，适合重视高峰表现但愿意先用月付验证的人。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>闪跃年付版：96 元/年，60GB/月。</li><li>闪动 Flicker：24 元/月，150GB/月；飞跃 Leap：44 元/月，300GB/月。</li><li>瞬移 Teleport：84 元/月，600GB/月；跃迁 Warp：134 元/月，1000GB/月。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           长期低成本保活、家庭第二备用节点、轻度海外冲浪与邮件收发
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           预算有限但追求年付省心、折合月付单价极低（折合 8 元/月）的用户
         </p>
       </div>
@@ -3351,58 +3360,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-26" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-26" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 高校科研 · 经济学术
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 26 名】Firefly
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：学术网络优化轻量中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">96 元/年 · 60GB/月（年付，折合约 8 元/月）</div>
-        <a href="https://vip02.fireflyaff.com/#/?code=lBPETX1d" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">96 元/年 · 60GB/月（年付，折合约 8 元/月）</div>
+        <a href="https://vip02.fireflyaff.com/#/?code=lBPETX1d" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       Firefly 提供多节点分流与通用订阅支持。服务商定位偏向 IPLC 与 VLESS，并宣传原生 IP、不限设备和企业定制。它与 FlyV 条目是不同的用户提供入口；套餐数据按 Firefly 独立资料页整理，流媒体与 AI 服务可用性不应写成独立验证。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>年付版：96 元/年，60GB/月。</li><li>常规月付：Lite 25 元 / 150GB；Plus 45 元 / 300GB；Blaze 85 元 / 600GB；Nova 150 元 / 1000GB。</li><li>一次性套餐：100 元 / 100GB；资料称不限时，账户有效期、闲置规则与服务存续以结算页为准。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           海外学术数据库登录、文献 AI 翻译、日常轻度网络检索与课业辅助
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           高校本科与研究生群体、学术科研备用、轻量文献检索人员
         </p>
       </div>
@@ -3425,58 +3434,58 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
 
-  <div class="provider-card-full" id="provider-rank-27" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:10px; padding:22px 24px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px; border-bottom:1px solid #f1f5f9; padding-bottom:12px;">
+  <div class="provider-card-full" id="provider-rank-27" style="border-left: 4px solid #cbd5e1; background:#ffffff; border-radius:8px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:10px; border-bottom:1px solid #f1f5f9; padding-bottom:10px;">
       <div>
-        <span class="badge-rank" style="background:#64748b; font-size:0.8rem; padding:3px 8px;">
+        <span class="badge-rank" style="background:#64748b; font-size:0.74rem; padding:2px 7px;">
           ⭐ 跨境电商 · 店铺运营
         </span>
-        <h3 style="margin:6px 0 4px 0; font-size:1.32rem; color:#0f172a;">
+        <h3 style="margin:3px 0 2px 0; font-size:1.18rem; color:#0f172a;">
           【第 27 名】跨界云
         </h3>
-        <div style="font-size:0.88rem; color:#64748b;">
+        <div style="font-size:0.82rem; color:#64748b;">
           节点地区：香港、日本、新加坡、美国等常用区域 · 架构类型：出海多业务出口中继
         </div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:1.15rem; font-weight:bold; color:#dc2626; margin-bottom:6px;">20 元/月 · 120GB</div>
-        <a href="https://vip02.kuajieaff.com/#/?code=Qu0GQkhP" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.88rem; padding:8px 18px;">
+        <div style="font-size:1.08rem; font-weight:bold; color:#dc2626; margin-bottom:4px;">20 元/月 · 120GB</div>
+        <a href="https://vip02.kuajieaff.com/#/?code=Qu0GQkhP" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.82rem; padding:6px 14px;">
           👉 官网注册通道 &rarr;
         </a>
       </div>
     </div>
 
-    <p style="font-size:0.96rem; color:#334155; line-height:1.7; margin-bottom:12px;">
+    <p style="font-size:0.9rem; color:#334155; line-height:1.6; margin-bottom:10px;">
       跨界云 提供多节点分流与通用订阅支持。核心信息是服务商所称的全网专线升级与通用订阅支持，套餐提供 120GB 至 1500GB 的四档流量选择。线路类型、流量重置与一次性套餐细则未被独立验证，更适合先从月付小档测试。
     </p>
 
     
 
-    <div class="provider-specs-grid" style="margin-top:14px;">
+    <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
         <strong>💰 套餐价格与规格明细：</strong>
-        <ul style="margin:6px 0 0 0; padding-left:18px; font-size:0.85rem; color:#475569;">
+        <ul style="margin:4px 0 0 0; padding-left:16px; font-size:0.82rem; color:#475569;">
           <li>轻云 Lite：20 元/月；54 元/季；192 元/年，120GB（流量重置口径未说明）。</li><li>跃云 Leap：40 元/月；108 元/季；384 元/年，300GB（流量重置口径未说明）。</li><li>凌云 Soar：100 元/月；270 元/季；960 元/年，700GB（流量重置口径未说明）。</li><li>无界 Infinity：180 元/月；486 元/季；1728 元/年，1500GB（流量重置口径未说明）。</li>
         </ul>
       </div>
 
       <div class="provider-spec-item">
         <strong>🌐 节点分布与网络协议：</strong>
-        <p style="margin:4px 0 4px 0; font-size:0.88rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
-        <p style="margin:0 0 4px 0; font-size:0.88rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
-        <p style="margin:0; font-size:0.88rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
+        <p style="margin:2px 0 2px 0; font-size:0.82rem; color:#334155;"><strong>覆盖地区：</strong>香港、日本、新加坡、美国等常用区域</p>
+        <p style="margin:0 0 2px 0; font-size:0.82rem; color:#334155;"><strong>传输协议：</strong>Shadowsocks, Trojan 等主流协议</p>
+        <p style="margin:0; font-size:0.82rem; color:#334155;"><strong>客户端支持：</strong>Clash, Shadowrocket, sing-box 等通用客户端</p>
       </div>
 
       <div class="provider-spec-item">
         <strong>🎯 适用业务场景：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           跨境电商多平台后台管理、竞品店铺分析、海外买家消息即时沟通与处理
         </p>
       </div>
 
       <div class="provider-spec-item">
         <strong>👥 推荐匹配人群：</strong>
-        <p style="margin:4px 0 0 0; font-size:0.88rem; color:#334155; line-height:1.55;">
+        <p style="margin:2px 0 0 0; font-size:0.82rem; color:#334155; line-height:1.45;">
           跨境电商小微卖家、亚马逊/eBay/Shopee 独立站店主、出海初创团队
         </p>
       </div>
