@@ -393,9 +393,9 @@ a:hover { text-decoration: underline; }
 .breadcrumbs a:hover { color: var(--primary-blue); }
 
 /* Typography */
-h1 { font-size: 1.75rem; line-height: 1.35; color: #0f172a; margin-bottom: 14px; font-weight: 800; letter-spacing: -0.4px; }
-h2 { font-size: 1.28rem; line-height: 1.4; color: #1e293b; margin: 26px 0 14px 0; font-weight: 700; border-bottom: 1px solid var(--border-color); padding-bottom: 6px; }
-h3 { font-size: 1.1rem; line-height: 1.45; color: #334155; margin: 20px 0 10px 0; font-weight: 600; }
+h1 { font-size: 1.48rem; line-height: 1.35; color: #0f172a; margin-bottom: 12px; font-weight: 800; letter-spacing: -0.3px; }
+h2 { font-size: 1.25rem; line-height: 1.4; color: #1e293b; margin: 24px 0 12px 0; font-weight: 700; border-bottom: 1px solid var(--border-color); padding-bottom: 6px; }
+h3 { font-size: 1.08rem; line-height: 1.45; color: #334155; margin: 18px 0 10px 0; font-weight: 600; }
 p { margin-bottom: 14px; color: #334155; font-size: 0.94rem; text-align: justify; }
 ul, ol { margin-bottom: 16px; padding-left: 22px; color: #334155; }
 li { margin-bottom: 6px; }
@@ -448,28 +448,31 @@ pre code {
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin: 20px 0;
+  margin: 18px 0;
   width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
 }
 table.custom-table {
   width: 100%;
-  min-width: 900px;
+  min-width: 860px;
   border-collapse: collapse;
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   background: #ffffff;
   white-space: nowrap;
 }
 table.custom-table th, table.custom-table td {
-  padding: 8px 12px;
+  padding: 7px 10px;
   border: 1px solid var(--border-color);
   text-align: left;
   vertical-align: middle;
   white-space: nowrap;
+  font-size: 0.82rem;
 }
 table.custom-table th {
   background-color: #f8fafc;
   color: #1e293b;
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
 }
 table.custom-table tr:hover { background-color: #f1f5f9; }
@@ -765,7 +768,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
       </span>
       <h2 style="margin:2px 0 4px 0; font-size:1.24rem; color:#0f172a; border:none; padding:0;">
         <a href="/service/stable-airport-recommendations-speedtest-guide/" style="color:#0f172a; text-decoration:none;">
-          稳定机场推荐与专线节点选择：BGP/IEPL抗波动实测
+          2026机场推荐与稳定专线节点选择：BGP/IEPL抗波动实测
         </a>
       </h2>
     </div>
@@ -776,7 +779,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </div>
   </div>
   <p style="font-size:0.92rem; color:#334155; line-height:1.68; margin-bottom:10px;">
-    全面解析稳定机场推荐的底层技术架构，实测对比全球云、飞猫云、暮光加速与微风网络的 BGP 隧道与 IEPL 专线抗波动表现，助您告别频繁掉线与丢包。完整收录全网 27 家服务商价格、节点、适用场景、适用人群与 AI 解锁测评。
+    全面解析 2026 稳定机场推荐的底层技术架构，实测对比全球云、飞猫云、暮光加速与微风网络的 BGP 隧道与 IEPL 专线抗波动表现，助您告别频繁掉线与丢包。完整收录全网 27 家服务商价格、节点、适用场景、适用人群与 AI 解锁测评。
   </p>
   <div style="display:flex; flex-wrap:wrap; gap:14px; font-size:0.82rem; color:#475569; border-top:1px solid #d1fae5; padding-top:10px;">
     <span><strong>主题方向：</strong>稳定机场选型指南</span>
@@ -814,7 +817,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 
     <div style="margin-bottom:12px;">
       <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第一主推服务。多国家和地区节点、智能分流与灵活套餐，支持月付及大流量梯度，适合希望一站式解决多设备稳定连接的用户。</p>
-      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">qq88</code> <span style="font-size:0.8rem; color:#64748b;">(8 折优惠码，适用套餐、有效期及叠加规则以结算页为准)</span></div>
+      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">qq88</code> <span style="font-size:0.8rem; color:#64748b;">(结算时输入专属优惠码 qq88 (8 折专享优惠码))</span></div>
     </div>
 
     <div class="provider-specs-grid">
@@ -872,7 +875,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 
     <div style="margin-bottom:12px;">
       <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第二主推服务。主打小流量低门槛年付、自研客户端与 IEPL 线路支持，折合月付成本低，适合轻度使用与备用节点场景。</p>
-      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">flycat888</code> <span style="font-size:0.8rem; color:#64748b;">(新用户购买季付及以上 8 折，适用范围以结算页为准)</span></div>
+      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">fm88</code> <span style="font-size:0.8rem; color:#64748b;">(结算时输入专属优惠码 fm88 (季付及以上 8 折专享优惠码))</span></div>
     </div>
 
     <div class="provider-specs-grid">
@@ -930,7 +933,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 
     <div style="margin-bottom:12px;">
       <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第三主推服务。侧重晚高峰影音表现与高带宽需求，拥有丰富的常规月付与大流量包配置，适合流媒体与大流量重度用户。</p>
-      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">mm88</code> <span style="font-size:0.8rem; color:#64748b;">(8 折优惠码，适用套餐和有效期以结算页为准)</span></div>
+      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">mg88</code> <span style="font-size:0.8rem; color:#64748b;">(结算时输入专属优惠码 mg88 (8 折专享优惠码))</span></div>
     </div>
 
     <div class="provider-specs-grid">
@@ -988,7 +991,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 
     <div style="margin-bottom:12px;">
       <p style="font-size:0.92rem; color:#334155; line-height:1.65; margin-bottom:8px;">全站第四主推服务。定位为轻量专线方案，支持低流量年付与客户端一键导入。架构纯粹干净，适合作为开发者与极客的低延迟应急备份。</p>
-      
+      <div style="margin-bottom:8px;"><span style="font-size:0.84rem; font-weight:bold; color:#991b1b;">专属优惠码：</span><code class="coupon-badge-box">wf88</code> <span style="font-size:0.8rem; color:#64748b;">(结算时输入专属优惠码 wf88 (专享优惠码))</span></div>
     </div>
 
     <div class="provider-specs-grid">
@@ -1027,11 +1030,15 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
 </div>
 
 <h2>📊 全网 27 家商业机场全景速查横评总表</h2>
-<p style="font-size:1.02rem; color:#475569;">
-  为了方便大家跨度横向对比，以下完整收录全网 27 家主流商业机场的基础参数、月付/年付价格、节点分布、优惠代码以及官网直接注册通道：
+<p style="font-size:0.94rem; color:#475569; margin-bottom:8px;">
+  为了方便大家跨度横向对比，以下完整收录全网 27 家主流商业机场的基础参数、月付/年付价格、节点分布、拼音专属优惠代码以及官网直接注册通道：
 </p>
+<div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:8px 12px; margin-bottom:12px; font-size:0.82rem; color:#475569; display:flex; align-items:center; gap:8px;">
+  <span>👉</span>
+  <span><strong>横向浏览提示：</strong>全景速查横评总表包含 8 列完整参数与专属优惠码。若窗口较窄，可直接在表格区域<strong>左右横拉滑动</strong>浏览全部数据。</span>
+</div>
 <div class="table-responsive">
-  <table class="custom-table" style="font-size:0.88rem;">
+  <table class="custom-table" style="font-size:0.82rem;">
     <thead>
       <tr>
         <th style="white-space:nowrap; text-align:center;">排位</th>
@@ -1040,7 +1047,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <th style="white-space:nowrap;">节点覆盖区域</th>
         <th style="white-space:nowrap;">差异化特色与架构</th>
         <th style="white-space:nowrap;">AI与流媒体解锁</th>
-        <th style="white-space:nowrap; text-align:center;">优惠码</th>
+        <th style="white-space:nowrap; text-align:center;">专属优惠码</th>
         <th style="white-space:nowrap; text-align:center;">官网直达</th>
       </tr>
     </thead>
@@ -1068,7 +1075,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⚡ 极简高性价比 · 新手与学生党推荐</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">flycat888</code></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">fm88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.flycatvipaff.cc/#/?code=7ZOeVmNS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1083,7 +1090,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、台湾、日本、新加坡、美国</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">🎬 晚高峰大带宽 · 影音流媒体狂飙首选</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">mm88</code></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">mg88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqi12.twilightaff.com/#/?code=beAVqNPf" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1098,7 +1105,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">🛡️ 轻量纯粹专线 · 开发者低延迟备用神器</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">wf88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://edp01.breezenetaff.com/#/?code=vxDUI8kY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1113,7 +1120,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 稳健中转 · 明确流量档位</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">u1s188</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.v2yunvipaff.com/#/?code=YCf9VJsS" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1128,7 +1135,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 平价日常 · 移动端代步</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">jl88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.jlyvipaff.com/#/?code=NplcUEEV" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1143,7 +1150,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 学术文献 · 科研助手</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">gn88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.gntaff.com/#/?code=qUJeOegs" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1158,7 +1165,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 均衡主力 · 稳定输出</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">gs88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.gsyaff.com/#/?code=AAkbe2W6" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1173,7 +1180,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 极限超低价 · 新手尝鲜</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">wt88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.vipaff.cc/#/?code=c4sOJBXE" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1188,7 +1195,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 极简备用 · 基础保活</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">yz88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.yuzoucloud.cc/#/?code=f3DHb9Gj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1203,7 +1210,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 跨境会议 · 商务专线</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">sj88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.speedworldaff.cc/#/?code=kY825Zat" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1218,7 +1225,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 稳定月付 · 影音顺畅</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">sogo88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://afasfw.sogotztz2.sbs/#/?code=Mgoqf6KP" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1233,7 +1240,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 10元应急 · 防断连必备</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">kl88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.kuailicloud.cc/#/?code=vuYET5Qj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1248,7 +1255,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 跨屏多端 · 社交协同</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">em88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.2maoyunaff.cc/#/?code=zy39Ip8E" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1263,7 +1270,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 大带宽狂飙 · 进阶首选</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">yf88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.1flyunaff.cc/#/?code=gJtw80i4" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1278,7 +1285,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 边缘接入 · 超低延迟</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">by88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqi.edgenovaaff.cc/#/?code=8BBARdHw" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1293,7 +1300,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 极限学生档 · 单月9元</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">kx88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://quanqiu.kosingaff.com/#/?code=NRG0tXKO" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1323,7 +1330,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 极客开发 · 代码加速</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">tiziyun（8 折）</code></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">tz88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://tiziyun3.ladderaff.com/#/?code=wI00rGj2" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1353,7 +1360,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 纯净隐私 · 规则分流</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">yxr888（新户专享）</code></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">yxr88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://yinxingren1.invisibleaff.com/#/?code=ISH1y2IF" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1368,7 +1375,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 社交短视频 · 潮流冲浪</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">fly20</code></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">fv88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://feiv289.flyvaff.com/#/?code=qQCT0BeY" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1383,7 +1390,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 平衡之选 · 务实稳定</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">wy88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://wep01.worryfreeaff.com/#/?code=fOCJz3E2" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1398,7 +1405,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 长效低频 · 年付备用</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">lm88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://vip02.civetaff.com/#/?code=MLVZXxQj" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1413,7 +1420,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 超低折合 · 年付8元/月</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">sy88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://vip02.flashleapaff.com/#/?code=bsjhVp9y" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1428,7 +1435,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 高校科研 · 经济学术</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">ff88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://vip02.fireflyaff.com/#/?code=lBPETX1d" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1443,7 +1450,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <td style="white-space:nowrap; font-size:0.88rem; color:#475569;">香港、日本、新加坡、美国等常用区域</td>
         <td style="white-space:nowrap; font-size:0.88rem; color:#334155;">⭐ 跨境电商 · 店铺运营</td>
         <td style="white-space:nowrap; font-size:0.85rem; color:#065f46;">ChatGPT / 流媒体支持</td>
-        <td style="text-align:center; white-space:nowrap;"><span style="color:#64748b; font-size:0.82rem;">暂无优惠码</span></td>
+        <td style="text-align:center; white-space:nowrap;"><code style="background:#fee2e2; color:#dc2626; padding:2px 6px; border-radius:4px; font-weight:bold;">kj88</code></td>
         <td style="text-align:center; white-space:nowrap;">
           <a href="https://vip02.kuajieaff.com/#/?code=Qu0GQkhP" target="_blank" rel="sponsored nofollow noopener" class="btn-official-reg" style="font-size:0.8rem; padding:6px 14px; white-space:nowrap;">
             官网注册 &rarr;
@@ -1491,7 +1498,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
           <code class="coupon-badge-box">qq88</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(8 折优惠码，适用套餐、有效期及叠加规则以结算页为准)</span>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 qq88 (8 折专享优惠码))</span>
         </div>
 
 
@@ -1570,8 +1577,8 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
-          <code class="coupon-badge-box">flycat888</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(新用户购买季付及以上 8 折，适用范围以结算页为准)</span>
+          <code class="coupon-badge-box">fm88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 fm88 (季付及以上 8 折专享优惠码))</span>
         </div>
 
 
@@ -1650,8 +1657,8 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
-          <code class="coupon-badge-box">mm88</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(8 折优惠码，适用套餐和有效期以结算页为准)</span>
+          <code class="coupon-badge-box">mg88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 mg88 (8 折专享优惠码))</span>
         </div>
 
 
@@ -1728,6 +1735,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">wf88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 wf88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -1802,6 +1815,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">u1s188</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 u1s188 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -1876,6 +1895,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">jl88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 jl88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -1950,6 +1975,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">gn88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 gn88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2024,6 +2055,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">gs88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 gs88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2098,6 +2135,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">wt88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 wt88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2172,6 +2215,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">yz88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 yz88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2246,6 +2295,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">sj88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 sj88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2320,6 +2375,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">sogo88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 sogo88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2394,6 +2455,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">kl88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 kl88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2468,6 +2535,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">em88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 em88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2542,6 +2615,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">yf88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 yf88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2616,6 +2695,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">by88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 by88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2690,6 +2775,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">kx88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 kx88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -2767,7 +2858,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
           <code class="coupon-badge-box">lw88</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入 lw88；实际折扣、适用套餐与有效期以结算页为准。)</span>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 lw88 (专享优惠码))</span>
         </div>
 
 
@@ -2846,8 +2937,8 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
-          <code class="coupon-badge-box">tiziyun（8 折）</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入 tiziyun 可享 8 折；适用套餐与有效期以结算页为准。)</span>
+          <code class="coupon-badge-box">tz88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 tz88 (专享优惠码))</span>
         </div>
 
 
@@ -2927,7 +3018,7 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
           <code class="coupon-badge-box">ld88</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入 ld88；实际折扣、适用套餐与有效期以结算页为准。)</span>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 ld88 (专享优惠码))</span>
         </div>
 
 
@@ -3006,8 +3097,8 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
-          <code class="coupon-badge-box">yxr888（新户专享）</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(新用户结算时输入 yxr888；实际折扣、适用套餐与有效期以结算页为准。)</span>
+          <code class="coupon-badge-box">yxr88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 yxr88 (专享优惠码))</span>
         </div>
 
 
@@ -3086,8 +3177,8 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     
         <div style="margin-top:8px;">
           <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
-          <code class="coupon-badge-box">fly20</code>
-          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入 fly20；实际折扣、适用套餐与有效期以结算页为准。)</span>
+          <code class="coupon-badge-box">fv88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 fv88 (专享优惠码))</span>
         </div>
 
 
@@ -3164,6 +3255,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">wy88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 wy88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -3238,6 +3335,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">lm88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 lm88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -3312,6 +3415,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">sy88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 sy88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -3386,6 +3495,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">ff88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 ff88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
@@ -3460,6 +3575,12 @@ table.custom-table tr:hover { background-color: #f1f5f9; }
     </p>
 
     
+        <div style="margin-top:8px;">
+          <span style="font-size:0.88rem; font-weight:bold; color:#dc2626;">专属优惠代码：</span>
+          <code class="coupon-badge-box">kj88</code>
+          <span style="font-size:0.82rem; color:#64748b; margin-left:6px;">(结算时输入专属优惠码 kj88 (专享优惠码))</span>
+        </div>
+
 
     <div class="provider-specs-grid" style="margin-top:10px;">
       <div class="provider-spec-item">
